@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content">
+    <ImageButton
+            android:layout_width="108dp"
+            android:layout_height="48dp" app:srcCompat="@drawable/united_states"
+            android:id="@+id/flag_image"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="country_name"
+            android:layout_width="99dp"
+            android:layout_height="22dp"
+            android:id="@+id/country_name"
+            app:layout_constraintTop_toBottomOf="@+id/flag_image" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="16sp"/>
+    <CheckBox
+            android:text="visited_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/visited_box"
+            app:layout_constraintTop_toBottomOf="@+id/country_name" app:layout_constraintStart_toStartOf="parent"
+    />
+</android.support.constraint.ConstraintLayout>
